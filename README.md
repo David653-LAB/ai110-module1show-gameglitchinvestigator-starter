@@ -26,17 +26,20 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+simple game to guess a number within limited tries.
 - [ ] Detail which bugs you found.
+Hard mode being too easy, number of attempts glitched, resetting was glitched, if numbers were too high it was told to go higher instead of lower and vice versa.
 - [ ] Explain what fixes you applied.
+
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
+1. change which difficulty
+2. choose a number between the range
+3. if wrong go higher or lower 
+4. if you win or lose or used up all attempts press new game to start over!
 5. <!-- Add more steps as needed -->
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
@@ -47,7 +50,13 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # Paste your pytest output here, e.g.:
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
-```
+``
+`tests/test_game_logic.py::test_winning_guess PASSED                      [ 33%]
+tests/test_game_logic.py::test_guess_too_high PASSED                     [ 66%]
+tests/test_game_logic.py::test_guess_too_low PASSED                      [100%]
+
+============================== 3 passed in 0.05s ==============================
+
 
 ## 🚀 Stretch Features
 
